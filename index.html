@@ -1,25 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèles d'IA pour usages pédagogiques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        .subtitle {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .svg-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: auto;
+        }
+        .controls {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 0.5rem;
+        }
+        button:hover {
+            background-color: #3367d6;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #666;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            main {
+                margin: 1rem auto;
+            }
+        }
+    </style>
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:x,mm:K}=window,P=new x.Toolbar;P.attach(K);const F=P.render();F.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(F)})})()</script><script>((b,L,T,D)=>{const H=b();window.mm=H.Markmap.create("svg#mindmap",(L||H.deriveOptions)(D),T)})(()=>window.markmap,null,{"content":"Formation Articulate","children":[{"content":"Formateur ind&#xe9;pendant","children":[{"content":"\n<h3 data-lines=\"3,4\">Atouts apparents</h3>","children":[{"content":"Proximit&#xe9; et personnalisation","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"Flexibilit&#xe9; et r&#xe9;activit&#xe9;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Tarifs comp&#xe9;titifs","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"Passion et investissement","children":[],"payload":{"tag":"li","lines":"7,8"}}],"payload":{"tag":"li","lines":"3,8"}},{"content":"\n<h3 data-lines=\"8,9\">Douleurs cach&#xe9;es</h3>","children":[{"content":"Nuits sacrifi&#xe9;es pour trouver des solutions","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Sentiment d&apos;imposture grandissant","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Projets qui d&#xe9;passent de 200-300% le temps pr&#xe9;vu","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Vie familiale d&#xe9;grad&#xe9;e mais rationalis&#xe9;e comme &apos;normale&apos;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Tensions conjugales dues &#xe0; l&apos;indisponibilit&#xe9; chronique","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"li","lines":"8,15"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Agence de cr&#xe9;ation","children":[{"content":"\n<h3 data-lines=\"16,17\">Atouts apparents</h3>","children":[{"content":"&#xc9;quipes pluridisciplinaires","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"Excellence cr&#xe9;ative et visuelle","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"Culture d&apos;entreprise valorisante","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"Portfolio impressionnant","children":[],"payload":{"tag":"li","lines":"20,21"}}],"payload":{"tag":"li","lines":"16,21"}},{"content":"\n<h3 data-lines=\"21,22\">Douleurs cach&#xe9;es</h3>","children":[{"content":"Semaines de 60h pour maintenir l&apos;&#xe9;quilibre financier","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Frustration des cr&#xe9;atifs face aux limitations techniques","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Conceptrices sacrifiant syst&#xe9;matiquement leur vie personnelle","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"Epuisement professionnel masqu&#xe9; par la culture d&apos;agence","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"Conflits familiaux dus aux connexions tardives r&#xe9;guli&#xe8;res","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"li","lines":"21,28"}}],"payload":{"tag":"h2","lines":"15,16"}},{"content":"Organisme non certifi&#xe9;","children":[{"content":"\n<h3 data-lines=\"29,30\">Atouts apparents</h3>","children":[{"content":"Certification Qualiopi","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Connaissance du syst&#xe8;me de financement","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"Catalogue diversifi&#xe9;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"Relations institutionnelles","children":[],"payload":{"tag":"li","lines":"33,34"}}],"payload":{"tag":"li","lines":"29,34"}},{"content":"\n<h3 data-lines=\"34,35\">Douleurs cach&#xe9;es</h3>","children":[{"content":"Anxi&#xe9;t&#xe9; des formateurs face &#xe0; leurs lacunes techniques","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Autoformation non r&#xe9;mun&#xe9;r&#xe9;e et &#xe9;puisante","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Charge mentale constante m&#xea;me hors temps de travail","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Crainte permanente d&apos;&#xea;tre expos&#xe9; en formation","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"Frustration de ne pas pouvoir r&#xe9;pondre aux questions avanc&#xe9;es","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"li","lines":"34,41"}}],"payload":{"tag":"h2","lines":"28,29"}},{"content":"Impacts humains","children":[{"content":"\n<h3 data-lines=\"42,43\">Professionnels</h3>","children":[{"content":"ROI n&#xe9;gatif masqu&#xe9;","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"Cr&#xe9;dibilit&#xe9; L&amp;D compromise","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"Carri&#xe8;res fragilis&#xe9;es","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Stress chronique","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"li","lines":"42,47"}},{"content":"\n<h3 data-lines=\"47,48\">Personnels</h3>","children":[{"content":"Culpabilit&#xe9; familiale","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Temps personnel sacrifi&#xe9;","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Relations de couple tendues","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"Enfants n&#xe9;glig&#xe9;s","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"&#xc9;puisement &#xe9;motionnel","children":[],"payload":{"tag":"li","lines":"52,53"}}],"payload":{"tag":"li","lines":"47,53"}},{"content":"\n<h3 data-lines=\"53,54\">Sp&#xe9;cificit&#xe9;s fran&#xe7;aises</h3>","children":[{"content":"S&#xe9;paration vie pro/perso th&#xe9;orique mais poreuse","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"Charge mentale accentu&#xe9;e chez les femmes (majoritaires en L&amp;D)","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"Culte de l&apos;excellence qui emp&#xea;che d&apos;admettre ses limites","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"D&#xe9;connexion plus difficile qu&apos;ailleurs","children":[],"payload":{"tag":"li","lines":"57,59"}}],"payload":{"tag":"li","lines":"53,59"}}],"payload":{"tag":"h2","lines":"41,42"}},{"content":"Solution Distrisoft","children":[{"content":"Formation certifi&#xe9;e Yukon Learning","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"Expertise directe de l&apos;&#xe9;diteur","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"Gain de temps prouv&#xe9;","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"Qualit&#xe9; technique optimale","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"Bien-&#xea;tre pr&#xe9;serv&#xe9;","children":[],"payload":{"tag":"li","lines":"64,65"}}],"payload":{"tag":"h2","lines":"59,60"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+    <header>
+        <h1>Quel modèle d'IA pour quel usage pédagogique ?</h1>
+        <div class="subtitle">Guide pour les professionnels de la formation d'adultes</div>
+    </header>
+    
+    <main>
+        <div class="controls">
+            <button onclick="zoomIn()">Zoom +</button>
+            <button onclick="zoomOut()">Zoom -</button>
+        </div>
+        
+        <div class="svg-container">
+            <!-- Insérer le code SVG complet ici -->
+            <svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Styles -->
+              <style>
+                .title {
+                  font-family: Arial, sans-serif;
+                  font-size: 32px;
+                  font-weight: bold;
+                  text-anchor: middle;
+                }
+                .subtitle {
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-style: italic;
+                  text-anchor: middle;
+                  fill: #555;
+                }
+                .main-node {
+                  font-family: Arial, sans-serif;
+                  font-size: 24px;
+                  font-weight: bold;
+                  text-anchor: middle;
+                  fill: white;
+                }
+                .usage-node {
+                  font-family: Arial, sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  text-anchor: start;
+                  fill: #333;
+                }
+                .model-node {
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-weight: bold;
+                  text-anchor: middle;
+                  fill: white;
+                }
+                .reason-text {
+                  font-family: Arial, sans-serif;
+                  font-size: 12px;
+                  text-anchor: start;
+                  fill: #333;
+                }
+                .connector {
+                  stroke-width: 2.5px;
+                  fill: none;
+                }
+                .source {
+                  font-family: Arial, sans-serif;
+                  font-size: 10px;
+                  font-style: italic;
+                  text-anchor: start;
+                  fill: #777;
+                }
+              </style>
+            
+              <!-- Background -->
+              <rect width="100%" height="100%" fill="#f7f9fc" />
+              
+              <!-- Title -->
+              <text x="800" y="45" class="title">Quel modèle d'IA pour quel usage pédagogique ?</text>
+              <text x="800" y="75" class="subtitle">Guide pour les professionnels de la formation d'adultes</text>
+            
+              <!-- Main center node -->
+              <circle cx="800" cy="200" r="70" fill="#4285f4" />
+              <text x="800" y="195" class="main-node">Modèles d'IA</text>
+              <text x="800" y="220" class="main-node">en pédagogie</text>
+            
+              <!-- Connections and Nodes -->
+              
+              <!-- 1. Création rapide de quiz -->
+              <path d="M800,270 C800,270 450,350 330,400" class="connector" stroke="#FF5722" />
+              <rect x="180" y="380" width="300" height="60" rx="15" fill="#FF5722" opacity="0.9" />
+              <text x="200" y="410" class="usage-node">Création rapide de quiz ou</text>
+              <text x="200" y="430" class="usage-node">résumés simples</text>
+              
+              <circle cx="330" cy="480" r="40" fill="#FF5722" opacity="0.7" />
+              <text x="330" y="475" class="model-node">GPT-3.5</text>
+              <text x="330" y="495" class="model-node">(ChatGPT)</text>
+              
+              <text x="200" y="540" class="reason-text">✓ Gratuit, rapide et efficace</text>
+              <text x="200" y="560" class="reason-text">✓ Parfait pour les tâches simples du quotidien</text>
+            
+              <!-- 2. Scénarios pédagogiques -->
+              <path d="M800,270 C800,270 350,400 180,600" class="connector" stroke="#8BC34A" />
+              <rect x="30" y="580" width="300" height="60" rx="15" fill="#8BC34A" opacity="0.9" />
+              <text x="50" y="610" class="usage-node">Scénarios pédagogiques détaillés,</text>
+              <text x="50" y="630" class="usage-node">objectifs SMART, conception</text>
+              
+              <circle cx="130" cy="680" r="40" fill="#8BC34A" opacity="0.7" />
+              <text x="130" y="675" class="model-node">GPT-4o</text>
+              <text x="130" y="695" class="model-node">(OpenAI)</text>
+              
+              <circle cx="230" cy="680" r="40" fill="#8BC34A" opacity="0.7" />
+              <text x="230" y="675" class="model-node">Claude 3.7</text>
+              <text x="230" y="695" class="model-node">Sonnet</text>
+              
+              <text x="50" y="740" class="reason-text">✓ Excellente compréhension des consignes</text>
+              <text x="50" y="760" class="reason-text">✓ Raisonnement pas-à-pas pour les conceptions</text>
+              <text x="50" y="780" class="reason-text">✓ Idéal pour les scénarios pédagogiques complexes</text>
+              <text x="50" y="800" class="source">Source: anthropic.com</text>
+            
+              <!-- 3. Recherche web récente -->
+              <path d="M800,270 C800,270 500,350 400,620" class="connector" stroke="#03A9F4" />
+              <rect x="250" y="820" width="300" height="60" rx="15" fill="#03A9F4" opacity="0.9" />
+              <text x="270" y="850" class="usage-node">Recherche web récente, veille</text>
+              <text x="270" y="870" class="usage-node">pédagogique, curation d'informations</text>
+              
+              <circle cx="350" cy="920" r="40" fill="#03A9F4" opacity="0.7" />
+              <text x="350" y="915" class="model-node">Perplexity</text>
+              <text x="350" y="935" class="model-node">AI</text>
+              
+              <circle cx="450" cy="920" r="40" fill="#03A9F4" opacity="0.7" />
+              <text x="450" y="915" class="model-node">Gemini 1.5</text>
+              <text x="450" y="935" class="model-node">Pro</text>
+              
+              <text x="270" y="980" class="reason-text">✓ Fournit des informations récentes du web</text>
+              <text x="270" y="1000" class="reason-text">✓ Modèle multimodal pour des tâches variées</text>
+              <text x="270" y="1020" class="source">Source: blog.google</text>
+            
+              <!-- 4. Synthèse ou analyse longue -->
+              <path d="M800,270 C800,270 650,350 650,400" class="connector" stroke="#9C27B0" />
+              <rect x="500" y="380" width="300" height="60" rx="15" fill="#9C27B0" opacity="0.9" />
+              <text x="520" y="410" class="usage-node">Synthèse ou analyse longue de</text>
+              <text x="520" y="430" class="usage-node">documents pédagogiques</text>
+              
+              <circle cx="650" cy="480" r="40" fill="#9C27B0" opacity="0.7" />
+              <text x="650" y="475" class="model-node">Claude 3.7</text>
+              <text x="650" y="495" class="model-node">Sonnet</text>
+              
+              <text x="520" y="540" class="reason-text">✓ Grande mémoire contextuelle</text>
+              <text x="520" y="560" class="reason-text">✓ Gestion fluide de textes longs</text>
+              <text x="520" y="580" class="reason-text">✓ Capacité de raisonnement approfondi</text>
+              <text x="520" y="600" class="source">Source: anthropic.com</text>
+            
+              <!-- 5. Contenus créatifs diversifiés -->
+              <path d="M800,270 C800,270 950,350 950,600" class="connector" stroke="#FF9800" />
+              <rect x="800" y="580" width="300" height="60" rx="15" fill="#FF9800" opacity="0.9" />
+              <text x="820" y="610" class="usage-node">Contenus créatifs diversifiés</text>
+              <text x="820" y="630" class="usage-node">(mix texte & images, supports)</text>
+              
+              <circle cx="950" cy="680" r="40" fill="#FF9800" opacity="0.7" />
+              <text x="950" y="675" class="model-node">Gemini 1.5</text>
+              <text x="950" y="695" class="model-node">Flash/Pro</text>
+              
+              <text x="820" y="740" class="reason-text">✓ Capacité multimodale efficace</text>
+              <text x="820" y="760" class="reason-text">✓ Idéal pour contenus variés</text>
+              <text x="820" y="780" class="source">Source: blog.google</text>
+            
+              <!-- 6. Contournement du manque de tokens -->
+              <path d="M800,270 C800,270 1000,350 1150,400" class="connector" stroke="#3F51B5" />
+              <rect x="1000" y="380" width="300" height="60" rx="15" fill="#3F51B5" opacity="0.9" />
+              <text x="1020" y="410" class="usage-node">Contournement du manque de tokens</text>
+              <text x="1020" y="430" class="usage-node">(ChatGPT limité en traitement)</text>
+              
+              <circle cx="1100" cy="480" r="40" fill="#3F51B5" opacity="0.7" />
+              <text x="1100" y="475" class="model-node">Claude 3.7</text>
+              <text x="1100" y="495" class="model-node">Sonnet</text>
+              
+              <circle cx="1200" cy="480" r="40" fill="#3F51B5" opacity="0.7" />
+              <text x="1200" y="475" class="model-node">Gemini 1.5</text>
+              <text x="1200" y="495" class="model-node">Pro</text>
+              
+              <text x="1020" y="540" class="reason-text">✓ Capacité rédactionnelle similaire ou supérieure</text>
+              <text x="1020" y="560" class="reason-text">✓ Parfait en relais à ChatGPT</text>
+              <text x="1020" y="580" class="source">Source: anthropic.com</text>
+            
+              <!-- 7. Traitement approfondi -->
+              <path d="M800,270 C800,270 1200,350 1400,580" class="connector" stroke="#4CAF50" />
+              <rect x="1250" y="580" width="300" height="60" rx="15" fill="#4CAF50" opacity="0.9" />
+              <text x="1270" y="610" class="usage-node">Traitement approfondi de grands</text>
+              <text x="1270" y="630" class="usage-node">volumes de textes</text>
+              
+              <circle cx="1300" cy="680" r="40" fill="#4CAF50" opacity="0.7" />
+              <text x="1300" y="675" class="model-node">Claude 3.7</text>
+              <text x="1300" y="695" class="model-node">Sonnet</text>
+              
+              <circle cx="1400" cy="680" r="40" fill="#4CAF50" opacity="0.7" />
+              <text x="1400" y="675" class="model-node">Gemini 1.5</text>
+              <text x="1400" y="695" class="model-node">Pro</text>
+              
+              <circle cx="1350" cy="760" r="40" fill="#4CAF50" opacity="0.7" />
+              <text x="1350" y="755" class="model-node">Grok 3</text>
+              <text x="1350" y="775" class="model-node">(xAI)</text>
+              
+              <text x="1270" y="820" class="reason-text">✓ Capacités de traitement contextuel étendues</text>
+              <text x="1270" y="840" class="reason-text">✓ Idéal pour analyses complexes</text>
+              <text x="1270" y="860" class="reason-text">✓ Raisonnement avancé pour contextes complexes</text>
+              <text x="1270" y="880" class="source">Sources: anthropic.com, blog.google, OpenCV</text>
+            
+              <!-- Legend -->
+              <rect x="1300" y="150" width="200" height="130" rx="10" fill="white" stroke="#ddd" />
+              <text x="1320" y="175" font-family="Arial" font-size="14" font-weight="bold">Légende:</text>
+              <circle cx="1330" y="195" r="7" fill="#4285f4" />
+              <text x="1345" y="200" font-family="Arial" font-size="12">Concept central</text>
+              <rect x="1320" y="210" width="15" height="15" rx="3" fill="#03A9F4" opacity="0.9" />
+              <text x="1345" y="222" font-family="Arial" font-size="12">Usage pédagogique</text>
+              <circle cx="1330" y="245" r="7" fill="#03A9F4" opacity="0.7" />
+              <text x="1345" y="248" font-family="Arial" font-size="12">Modèle IA recommandé</text>
+            
+              <!-- Note for the presenter -->
+              <rect x="1250" y="30" width="300" height="85" rx="10" fill="white" stroke="#ddd" />
+              <text x="1270" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Pour votre webinaire:</text>
+              <text x="1270" y="75" font-family="Arial" font-size="12" fill="#555">Montrez comment passer d'un modèle à</text>
+              <text x="1270" y="95" font-family="Arial" font-size="12" fill="#555">l'autre selon les besoins spécifiques des</text>
+              <text x="1270" y="115" font-family="Arial" font-size="12" fill="#555">formateurs au quotidien.</text>
+            </svg>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Carte mentale créée pour faciliter la prise de décision sur le choix des modèles d'IA à utiliser dans un contexte pédagogique.</p>
+    </footer>
+
+    <script>
+        // Script pour le zoom
+        let currentScale = 1;
+        const svgElement = document.querySelector('svg');
+        
+        function zoomIn() {
+            currentScale += 0.1;
+            applyZoom();
+        }
+        
+        function zoomOut() {
+            if (currentScale > 0.3) {
+                currentScale -= 0.1;
+                applyZoom();
+            }
+        }
+        
+        function applyZoom() {
+            svgElement.style.transform = `scale(${currentScale})`;
+            svgElement.style.transformOrigin = 'center top';
+        }
+    </script>
 </body>
 </html>
